@@ -1,0 +1,319 @@
+/* about.ccs */
+.heading {
+  background-color: rgb(245, 172, 35);
+  color: white;
+  font-weight: bold;
+  padding-left: 5%;
+  padding-top: 1.5%;
+  padding-bottom: 1%;
+}
+.descriptionsection {
+  padding-top: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.test {
+  margin-left: 5px;
+  font-weight: 400;
+  color: grey;
+}
+.website1 {
+  margin-top: 2%;
+  display: flex;
+  justify-content: right;
+}
+.pool {
+  font-weight: 400;
+}
+.Amenities {
+  display: flex;
+  justify-content: space-between;
+}
+/* card.css */
+
+.section {
+  display: flex;
+  height: 60vh;
+  box-shadow: 0px 0.5px 10px gray;
+  background: white;
+  margin-right: 1%;
+  margin-left: 1%;
+  margin-top: 2%;
+}
+.card1 {
+  width: 55%;
+  padding-top: 1.5%;
+  padding-left: 2%;
+}
+.card1 .hotelimg1 {
+  height: 90%;
+  width: 95%;
+}
+.card2 {
+  width: 45%;
+  padding-top: 1.5%;
+  padding-right: 1%;
+}
+.mycard {
+  display: flex;
+  height: 50%;
+}
+.carddetail1 {
+  width: 100%;
+}
+.hotelimg2 {
+  width: 95%;
+  height: 95%;
+}
+.hotelimg3 {
+  width: 95%;
+  height: 95%;
+}
+/* detail.css */
+.information {
+  display: flex;
+}
+.mysection {
+  width: 25%;
+  margin-top: 1%;
+  margin-left: 1%;
+  background: white;
+  box-shadow: 0px 0.5px 10px gray;
+  padding-top: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+  border-top: 2px solid rgb(245, 172, 35);
+}
+.detail img {
+  height: 100%;
+  width: 100%;
+}
+h5 {
+  text-align: center;
+}
+.website {
+  display: flex;
+  justify-content: right;
+}
+h6 {
+  margin-left: 5px;
+}
+.city {
+  margin-top: 1%;
+}
+span {
+  margin-left: 3px;
+  color: grey;
+  font-weight: 400;
+}
+span.email {
+  color: rgb(245, 172, 35);
+}
+.btn {
+  color: white;
+  background: rgb(245, 172, 35);
+  font-weight: bold;
+  text-align: right;
+  margin-left: 20%;
+}
+.section2 {
+  width: 75%;
+  background: white;
+  box-shadow: 0px 0.5px 10px gray;
+  margin-top: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+  height: 100%;
+}
+.mysection1 {
+  width: 25%;
+  margin-left: 1%;
+}
+.section12 {
+  width: 75%;
+  background: white;
+  box-shadow: 0px 0.5px 10px gray;
+  margin-top: -2.5%;
+  margin-left: 1%;
+  margin-right: 1%;
+  height: 100%;
+  margin-bottom: 1%;
+}
+/* favicon.css */
+.faviconlist {
+  margin-left: 25%;
+}
+.icon1 {
+  color: grey;
+}
+/* form.css */
+.formdetail {
+  padding: 1%;
+}
+input {
+  border: 1px solid grey;
+}
+input:focus {
+  box-shadow: 0px 0px 4px rgb(64, 161, 155) !important;
+  border: 1px solid grey !important;
+}
+.asterisk {
+  color: red;
+}
+.submit {
+  color: white;
+  background: crimson;
+  font-weight: bold;
+  text-align: right;
+  margin-left: 20%;
+  padding-bottom: 5px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+/* location.css */
+.Location {
+  display: flex;
+}
+.website12 {
+  width: 50%;
+  display: flex;
+}
+.para {
+  color: grey;
+  font-weight: 400;
+}
+/* navbar.css */
+.data {
+  background-color: white;
+  /* height:4%; */
+  box-shadow: 0px 0.5px 5px grey;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.data .rightlink {
+  display: flex;
+  padding-top: 5px;
+  padding-left: 81%;
+}
+button {
+  border: none;
+  background: white;
+  padding-top: 5px;
+}
+.img {
+  width: 20%;
+  height: 80%;
+  border-radius: 50%;
+  padding-right: 3%;
+}
+p {
+  color: grey;
+  font-weight: 400;
+  padding-right: 5%;
+}
+a {
+  color: rgb(245, 172, 35);
+}
+/* profile.css */
+.profile {
+  display: flex;
+  justify-content: space-between;
+}
+.leftsec {
+  margin-top: 8px;
+  margin-left: 2px;
+}
+h4 {
+  font-size: 25px;
+}
+.rightsec {
+  margin-top: 8px;
+  margin-right: 4%;
+}
+.slash {
+  margin-left: 3px;
+  margin-right: 3px;
+  color: grey;
+}
+.rightsec .hotel {
+  color: grey;
+  font-weight: 400;
+}
+/* Revenue.css */
+.revenuesec {
+  box-shadow: 0px 0.5px 10px gray;
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.footer {
+  margin-top: 2%;
+  background: white;
+  font-weight: bold;
+  padding: 0.8%;
+  border-bottom: 1px solid grey;
+  box-shadow: 0px 0.5px 10px gray;
+}
+.foot {
+  font-size: 16px !important;
+  color: grey;
+  font-weight: bold;
+}
+/* setting.css */
+.button-grp {
+  display: flex;
+  margin-top: 1%;
+  padding-left: 1%;
+}
+.button {
+  background-color: rgb(64, 161, 155);
+  font-weight: 400;
+  padding-bottom: 5px;
+  color: white;
+  margin-right: 5px;
+  font-size: 14px;
+  border-radius: 3px;
+  padding-top: 7px;
+}
+.btn1 {
+  background: rgb(245, 172, 35);
+}
+.form {
+  box-shadow: 0px 0.5px 10px gray;
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+/* sidebar.css */
+.sidebar {
+  background-color: rgb(54, 54, 54);
+  height: 100%;
+}
+.sidebar .logo {
+  display: flex;
+  justify-content: center;
+  padding-top: 10%;
+}
+.sidebar .favicon {
+  padding-top: 20%;
+}
+.img1 {
+  border-radius: 50%;
+  height: 70%;
+  width: 60%;
+}
+.fav {
+  padding-top: 1200px;
+}
+/* custom styling */
+button{
+  outline:none!important;
+}
+button:hover{
+  box-shadow: 0px 0.5px 4px gray;
+}
+a{
+  text-decoration: none!important;
+}
