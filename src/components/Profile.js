@@ -7,7 +7,7 @@ function Profile() {
     <>
       <div className="profile">
         <div className="leftsec">
-          <h4>Profile</h4>
+          <h4 className="ml-2">Profile</h4>
         </div>
         <div className="rightsec">
           <a href="#">
