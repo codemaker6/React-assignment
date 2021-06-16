@@ -8,9 +8,9 @@ function Navbar() {
           <button class="detailbutton">&#9776;</button>
         </div>
         <div className="rightlink">
-          <img className="img" src={photo} alt="photo" />
+          <img className="img" src={photo} alt="pic" />
           <p>Aman</p>
-          <a href="#">Logout</a>
+          <a href="/logout">Logout</a>
         </div>
       </div>
     </>

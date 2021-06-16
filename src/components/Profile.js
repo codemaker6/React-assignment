@@ -10,10 +10,10 @@ function Profile() {
           <h4 className="ml-2">Profile</h4>
         </div>
         <div className="rightsec">
-          <a href="#">
+          <a href="/home">
             Home<span class="slash">/</span>
           </a>
-          <a className="hotel" href="#">
+          <a className="hotel" href="/hotel">
             Hotel Profile
           </a>
         </div>
