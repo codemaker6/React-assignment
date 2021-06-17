@@ -317,3 +317,42 @@ button:hover{
 a{
   text-decoration: none!important;
 }
+@media only screen and (min-device-width:700px) and (max-device-width:771px) {
+  .section12 {
+    margin-top: 5px!important;
+  }
+}
+@media only screen and (min-device-width:772px) and (max-device-width:830px) {
+  .section12 {
+    margin-top: -2%!important;
+  }
+}
+@media only screen and (min-device-width:760px) and (max-device-width:960px) {
+  .btn {
+    margin-left: 8%!important;
+  }
+  .faviconlist {
+    margin-left: 8%!important;
+  }
+  .button {
+    font-size: 8.5px!important;
+    margin-right: 2px!important;
+    padding-bottom: 7px!important;
+  }
+  
+}
+
+@media only screen and (min-device-width:960px) and (max-device-width:1030px) 
+{
+  .faviconlist {
+    margin-left: 17%!important;
+  }
+}
+@media only screen and (min-device-width:961px) and (max-device-width:1218px) 
+{
+  .button {
+    font-size: 10px!important;
+  }
+  
+
+}
