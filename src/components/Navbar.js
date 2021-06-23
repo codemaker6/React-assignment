@@ -1,5 +1,6 @@
 import React from "react";
 import photo from "../IMAGES/photo.jpg";
+import {Link} from "react-router-dom"
 function Navbar() {
   return (
     <>
@@ -10,7 +11,9 @@ function Navbar() {
         <div className="rightlink">
           <img className="img" src={photo} alt="pic" />
           <p>Aman</p>
-          <a href="/logout">Logout</a>
+          <Link to="/">Home</Link>
+          <Link className="admin" to="/admin">Dashboard </Link>
+          <Link to="#">Logout</Link>
         </div>
       </div>
     </>
