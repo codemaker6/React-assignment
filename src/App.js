@@ -1,23 +1,19 @@
 import "./App.css";
 import "./CSS/Globalstyle.css";
-import Sidebar from "./components/Sidebar";
-import Navbar from "./components/Navbar";
-import Profile from "./components/Profile";
+import Main from "./components/Main";
 import Footer from "./components/Footer";
+import {BrowserRouter} from "react-router-dom"
+import Routing from "./Routing/Routing";
+import Navbar from "./components/Navbar";
+import Dashboard from "./admin/Dashboard";
 
 function App() {
   return (
     <>
-      <div className="content">
-        <div className="left" >
-          <Sidebar></Sidebar>
-        </div>
-        <div className="right">
-          <Navbar></Navbar>
-          <Profile></Profile>
-          <Footer></Footer>
-        </div>
-      </div>
+    <BrowserRouter>
+    <Navbar></Navbar>
+    <Routing></Routing>
+      </BrowserRouter>
     </>
   );
 }
