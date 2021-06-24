@@ -6,7 +6,7 @@ function Navbar() {
     <>
       <div className="data">
         <div className="leftlink">
-          <button class="detailbutton">&#9776;</button>
+          <button className="detailbutton">&#9776;</button>
         </div>
         <div className="rightlink">
           <img className="img" src={photo} alt="pic" />
@@ -16,6 +16,7 @@ function Navbar() {
           <Link to="#">Logout</Link>
         </div>
       </div>
+     
     </>
   );
 }

@@ -1,7 +1,6 @@
 import React from "react";
 import Cards from "./Cards";
 import Detail from "./Detail";
-import Routing from "../Routing/Routing";
 import {Link} from "react-router-dom"
 
 function Profile() {
@@ -12,9 +11,9 @@ function Profile() {
           <h4 className="ml-2">Profile</h4>
         </div>
         <div className="rightsec">
-          <a className="hotel" href="/hotel">
+          <Link className="hotel" to="/hotel">
             Hotel Profile
-          </a>
+          </Link>
         </div>
       </div>
       <Cards></Cards>
