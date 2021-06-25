@@ -1,8 +1,8 @@
 /* about.ccs */
-.admin{
-  margin-left: 3%!important;
-  margin-right: 3%!important;
-  color:rgb(245, 172, 35);
+.admin {
+  margin-left: 3% !important;
+  margin-right: 3% !important;
+  color: rgb(245, 172, 35);
 }
 .heading {
   background-color: rgb(245, 172, 35);
@@ -313,93 +313,89 @@ h4 {
   padding-top: 1200px;
 }
 /* custom styling */
-button{
-  outline:none!important;
+button {
+  outline: none !important;
 }
-button:hover{
+button:hover {
   box-shadow: 0px 0.5px 4px gray;
 }
-a{
-  text-decoration: none!important;
+a {
+  text-decoration: none !important;
 }
-@media only screen and (min-device-width:700px) and (max-device-width:771px) {
+@media only screen and (min-device-width: 700px) and (max-device-width: 771px) {
   .section12 {
-    margin-top: 5px!important;
+    margin-top: 5px !important;
   }
 }
-@media only screen and (min-device-width:772px) and (max-device-width:830px) {
+@media only screen and (min-device-width: 772px) and (max-device-width: 830px) {
   .section12 {
-    margin-top: -2%!important;
+    margin-top: -2% !important;
   }
 }
-@media only screen and (min-device-width:760px) and (max-device-width:960px) {
+@media only screen and (min-device-width: 760px) and (max-device-width: 960px) {
   .btn {
-    margin-left: 8%!important;
+    margin-left: 8% !important;
   }
   .faviconlist {
-    margin-left: 8%!important;
+    margin-left: 8% !important;
   }
   .button {
-    font-size: 8.5px!important;
-    margin-right: 2px!important;
-    padding-bottom: 7px!important;
+    font-size: 8.5px !important;
+    margin-right: 2px !important;
+    padding-bottom: 7px !important;
   }
-  
 }
 
-@media only screen and (min-device-width:960px) and (max-device-width:1030px) 
-{
+@media only screen and (min-device-width: 960px) and (max-device-width: 1030px) {
   .faviconlist {
-    margin-left: 17%!important;
+    margin-left: 17% !important;
   }
 }
-@media only screen and (min-device-width:961px) and (max-device-width:1218px) 
-{
+@media only screen and (min-device-width: 961px) and (max-device-width: 1218px) {
   .button {
-    font-size: 10px!important;
+    font-size: 10px !important;
   }
-  }
+}
 /* ADMIN CSS  */
-.dashboard{
-  background-color:lightgrey;
-  height:100%;
-  width:100%;
+.dashboard {
+  background-color: lightgrey;
+  height: 100%;
+  width: 100%;
   margin-top: 15px;
 }
-.dashhead{
+.dashhead {
   text-align: center;
   font-weight: bold;
   font-style: italic;
-  color:white;
+  color: white;
   font-size: 35px;
   padding-top: 10px;
 }
-.myadmin{
+.myadmin {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   font-style: italic;
 }
-.adminimg{
+.adminimg {
   border-radius: 50%;
-  height:60%;
-  width:70%;
+  height: 60%;
+  width: 70%;
   margin-left: 14%;
   margin-bottom: 5px;
 }
-.admin1{
- width:50%;
+.admin1 {
+  width: 50%;
 }
-.admin2{
- width:50%;
+.admin2 {
+  width: 50%;
 }
-.uselink{
-  
-  color:green;
+.uselink {
+  color: green;
   font-style: italic;
-  font-weight: bold!important;
+  font-weight: bold !important;
 }
 /* Adminlogin css */
-.adminlogin{
+.adminlogin {
   display: grid;
   place-items: center;
   text-align: center;
@@ -407,37 +403,49 @@ a{
   height: 75vh;
 }
 
-
-.contentform{
+.contentform {
   width: 330px;
   border-radius: 10px;
   padding: 40px 30px;
   position: relative;
-  background: rgba(255,255,255,0.08);
+  background: rgba(255, 255, 255, 0.08);
   border-radius: 6px;
   overflow: hidden;
   z-index: 10;
   top: 100px;
   backdrop-filter: blur(15px);
-  border: 2px solid rgba(255,255,255,0.2);
-   
-  box-shadow: 5px 5px 30px rgba(0,0,0,0.2);
-   
-  clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+
+  clip-path: polygon(
+    0% 15%,
+    15% 15%,
+    15% 0%,
+    85% 0%,
+    85% 15%,
+    100% 15%,
+    100% 85%,
+    85% 85%,
+    85% 100%,
+    15% 100%,
+    15% 85%,
+    0% 85%
+  );
 }
-.contentform .text{
+.contentform .text {
   font-size: 25px;
   font-weight: 600;
   margin-bottom: 35px;
   color: white;
 }
-.contentform .fielddata{
+.contentform .fielddata {
   height: 50px;
   width: 100%;
   display: flex;
   position: relative;
 }
-.fielddata input{
+.fielddata input {
   height: 100%;
   width: 100%;
   padding-left: 45px;
@@ -447,56 +455,99 @@ a{
   color: #f5f5f5;
   background: #dde1e7;
   border-radius: 25px;
-  background: rgba(255,255,255,0.05);
-  border-top: 1px solid rgba(255,255,255,0.2);
-  border-left: 1px solid rgba(255,255,255,0.2);
-  box-shadow: 5px 5px 30px rgba(0,0,0,0.2);
+  background: rgba(255, 255, 255, 0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
 }
-.fielddata:nth-child(2){
+.fielddata:nth-child(2) {
   margin-top: 20px;
 }
-.fielddata span{
+.fielddata span {
   position: absolute;
   width: 50px;
   line-height: 50px;
   color: #595959;
 }
-.forgot-pass{
+.forgot-pass {
   text-align: left;
   margin: 10px 0 10px 5px;
 }
-.forgot-pass a{
+.forgot-pass a {
   font-size: 16px;
   color: white;
   text-decoration: none;
 }
 /* hover*/
-.forgot-pass:hover a{
+.forgot-pass:hover a {
   text-decoration: underline;
 }
-.log{
+.log {
   margin: 15px 0;
   width: 100%;
   height: 50px;
-  color:black;
+  color: black;
   font-size: 18px;
-  font-weight:600;
+  font-weight: 600;
   background: #dde1e7;
   border: none;
   cursor: pointer;
   outline: none;
   border-radius: 25px;
-  background: rgba(255,255,255,0.05);
-  border-top: 1px solid rgba(255,255,255,0.2);
-  border-left: 1px solid rgba(255,255,255,0.2);
-  box-shadow: 5px 5px 30px rgba(0,0,0,0.2);
+  background: rgba(255, 255, 255, 0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
 }
 /* API INTEGRATE CSS */
-.datasection{
-  background-color:black;
-  width:7%;
+.h4style {
+  color: crimson;
   text-align: center;
-  height:92.5vh;
-  padding-top: 5%;
-  
+  padding: 10px;
+  font-style: italic;
+  font-weight: bold;
+}
+.Section-for-api {
+  display: flex;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.Section-for-api1 {
+  width: 8%;
+}
+.Section-for-api2 {
+  width: 92%;
+  background-color: rgb(184, 192, 202);
+}
+.buttonsection {
+  background-color: rgb(235, 229, 229);
+  text-align: center;
+  padding-top: 2%;
+}
+.apibutton {
+  background-color: rgb(235, 229, 229) !important;
+  display: flex;
+  color: black;
+  font-weight: bold;
+  outline: none;
+  margin-top: 5px;
+}
+.tablesection {
+  padding: 5px !important;
+  box-shadow: 0px 0.5px 10px gray;
+}
+.buttondis {
+  color: lightgrey;
+  cursor: not-allowed;
+}
+.deletebutton {
+  color: white !important;
+  background: crimson;
+  text-align: center;
+  margin-top: 10px;
+}
+.btndng {
+  padding-bottom: 8px;
+  margin-bottom: 5px;
 }
