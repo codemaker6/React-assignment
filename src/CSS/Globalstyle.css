@@ -551,3 +551,10 @@ a {
   padding-bottom: 8px;
   margin-bottom: 5px;
 }
+.updatebtn{
+    color: black !important;
+    background: rgb(247, 247, 97);
+    text-align: center;
+    margin-top: 10px;
+  
+}

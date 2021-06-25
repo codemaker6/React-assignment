@@ -45,6 +45,8 @@ const Userdata = () => {
       })
     }) 
   }
+
+
   return (
     <>
       <h4 className="h4style"> USER API DATA</h4>
@@ -73,13 +75,14 @@ const Userdata = () => {
           <section className="Section-for-api2">
             <div className="tablesection">
               <h3>POST API</h3>
-              <table class="table">
+              <table class="table" id="table">
                 <thead>
                   <tr>
                     <th scope="col">id</th>
                     <th scope="col">title</th>
                     <th scope="col">body</th>
                     <th scope="col">DELETE</th>
+                    
                   </tr>
                 </thead>
                 <tbody>
@@ -88,9 +91,9 @@ const Userdata = () => {
                       <th scope="row">{item.id}</th>
                       <td>{item.title}</td>
                       <td>{item.body}</td>
-                      <td>
-                        {" "}
-                        <button
+                      
+                    
+                      <td><button
                           className="deletebutton"
                           onClick={()=>Deletepost(index)}
                         >
