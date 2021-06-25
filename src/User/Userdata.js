@@ -30,18 +30,21 @@ const Userdata = () => {
         setFlag(false);
       });
   };
-  //    DELETE DATA
-  const DeletePost = (id) => {
-    fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, {
-      method: "DELETE",
-    }).then((result) => {
-      result.json().then((res) => {
-        console.warn(res);
-        PostApi();
-      });
-    });
-  };
-
+  //    DELETE DATA functionality
+   const Deletepost=(id)=>{
+     setUserpost((userpost)=>{
+       return userpost.filter((arrayele,index)=>{
+         return index!==id;
+       })
+     }) 
+   }
+   const Deletepost1=(id)=>{
+    setUsercomment((usercomment)=>{
+      return usercomment.filter((arrayele,index)=>{
+        return index!==id;
+      })
+    }) 
+  }
   return (
     <>
       <h4 className="h4style"> USER API DATA</h4>
@@ -80,7 +83,7 @@ const Userdata = () => {
                   </tr>
                 </thead>
                 <tbody>
-                  {userpost.map((item) => (
+                  {userpost.map((item,index) => (
                     <tr>
                       <th scope="row">{item.id}</th>
                       <td>{item.title}</td>
@@ -89,7 +92,7 @@ const Userdata = () => {
                         {" "}
                         <button
                           className="deletebutton"
-                          onClick={() => DeletePost(item.id)}
+                          onClick={()=>Deletepost(index)}
                         >
                           Delete
                         </button>
@@ -119,7 +122,7 @@ const Userdata = () => {
                   </tr>
                 </thead>
                 <tbody>
-                  {usercomment.map((item) => (
+                  {usercomment.map((item,index) => (
                     <tr>
                       <th scope="row">{item.id}</th>
                       <td>{item.email}</td>
@@ -129,7 +132,7 @@ const Userdata = () => {
                         {" "}
                         <button
                           className="deletebutton"
-                          onClick={() => DeletePost(item.id)}
+                          onClick={() => Deletepost1(index)}
                         >
                           Delete
                         </button>

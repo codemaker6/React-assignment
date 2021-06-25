@@ -106,7 +106,49 @@ const Admindata = () => {
         setFlag4(false);
       });
   };
-
+  // DELETE FUNCTIONALITY
+  const deletedata = (id) => {
+    setUserdata((userdata) => {
+      return userdata.filter((arrayele, index) => {
+        return index !== id;
+      });
+    });
+  };
+  const Deletepost = (id) => {
+    setUserpost((userpost) => {
+      return userpost.filter((arrayele, index) => {
+        return index !== id;
+      });
+    });
+  };
+  const Deletepost1 = (id) => {
+    setUsercomment((usercomment) => {
+      return usercomment.filter((arrayele, index) => {
+        return index !== id;
+      });
+    });
+  };
+  const deletetodo = (id) => {
+    setUsertodo((usertodo) => {
+      return usertodo.filter((arrayele, index) => {
+        return index !== id;
+      });
+    });
+  };
+  const deletephoto = (id) => {
+    setUserphoto((userphoto) => {
+      return userphoto.filter((arrayele, index) => {
+        return index !== id;
+      });
+    });
+  };
+  const deletealbum = (id) => {
+    setUseralbum((useralbum) => {
+      return useralbum.filter((arrayele, index) => {
+        return index !== id;
+      });
+    });
+  };
   return (
     <>
       <h4 className="h4style">ADMIN API DATA</h4>
@@ -149,7 +191,7 @@ const Admindata = () => {
                   </tr>
                 </thead>
                 <tbody>
-                  {userdata.map((item) => (
+                  {userdata.map((item, index) => (
                     <tr>
                       <th scope="row">{item.id}</th>
                       <td>{item.name}</td>
@@ -157,7 +199,12 @@ const Admindata = () => {
                       <td>{item.username}</td>
                       <td>{item.website}</td>
                       <td>
-                        <button className="deletebutton">Delete</button>
+                        <button
+                          className="deletebutton"
+                          onClick={() => deletedata(index)}
+                        >
+                          Delete
+                        </button>
                       </td>
                     </tr>
                   ))}
@@ -183,13 +230,18 @@ const Admindata = () => {
                   </tr>
                 </thead>
                 <tbody>
-                  {userpost.map((item) => (
+                  {userpost.map((item, index) => (
                     <tr>
                       <th scope="row">{item.id}</th>
                       <td>{item.title}</td>
                       <td>{item.body}</td>
                       <td>
-                        <button className="deletebutton">Delete</button>
+                        <button
+                          className="deletebutton"
+                          onClick={() => Deletepost(index)}
+                        >
+                          Delete
+                        </button>
                       </td>
                     </tr>
                   ))}
@@ -216,14 +268,19 @@ const Admindata = () => {
                   </tr>
                 </thead>
                 <tbody>
-                  {usercomment.map((item) => (
+                  {usercomment.map((item, index) => (
                     <tr>
                       <th scope="row">{item.id}</th>
                       <td>{item.email}</td>
                       <td>{item.name}</td>
                       <td>{item.body}</td>
                       <td>
-                        <button className="deletebutton">Delete</button>
+                        <button
+                          className="deletebutton"
+                          onClick={() => Deletepost1(index)}
+                        >
+                          Delete
+                        </button>
                       </td>
                     </tr>
                   ))}
@@ -249,13 +306,18 @@ const Admindata = () => {
                   </tr>
                 </thead>
                 <tbody>
-                  {usertodo.map((item) => (
+                  {usertodo.map((item, index) => (
                     <tr>
                       <th scope="row">{item.id}</th>
                       <td>{item.title}</td>
                       <td>{item.completed == true ? "true" : "false"}</td>
                       <td>
-                        <button className="deletebutton">Delete</button>
+                        <button
+                          className="deletebutton"
+                          onClick={() => deletetodo(index)}
+                        >
+                          Delete
+                        </button>
                       </td>
                     </tr>
                   ))}
@@ -282,14 +344,19 @@ const Admindata = () => {
                   </tr>
                 </thead>
                 <tbody>
-                  {userphoto.map((item) => (
+                  {userphoto.map((item, index) => (
                     <tr>
                       <th scope="row">{item.id}</th>
                       <td>{item.title}</td>
                       <td>{item.url}</td>
                       <td>{item.thumbnailUrl}</td>
                       <td>
-                        <button className="deletebutton">Delete</button>
+                        <button
+                          className="deletebutton"
+                          onClick={() => deletephoto(index)}
+                        >
+                          Delete
+                        </button>
                       </td>
                     </tr>
                   ))}
@@ -314,12 +381,17 @@ const Admindata = () => {
                   </tr>
                 </thead>
                 <tbody>
-                  {useralbum.map((item) => (
+                  {useralbum.map((item, index) => (
                     <tr>
                       <th scope="row">{item.id}</th>
                       <td>{item.title}</td>
                       <td>
-                        <button className="deletebutton">Delete</button>
+                        <button
+                          className="deletebutton"
+                          onClick={() => deletealbum(index)}
+                        >
+                          Delete
+                        </button>
                       </td>
                     </tr>
                   ))}
